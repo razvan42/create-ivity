@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//general styling
+$color: rgba(93, 93, 93, 0.05);
+
+body {
+  width: 85%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: rgb(46, 55, 77);
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+a:hover {
+  color: rgb(213, 185, 129);
+}
+li {
+  list-style: none;
+}
+
+//Navigation styling
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgb(110, 60, 132) 0px,
+    rgb(110, 60, 132) 17px,
+    rgb(167, 70, 127) 17px,
+    rgb(167, 70, 127) 34px,
+    rgb(52, 50, 136) 34px,
+    rgb(52, 50, 136) 51px
+  );
+  background-clip: text;
+  color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  flex: 1 1 30rem;
+  user-select: none;
+  padding: 1rem;
+}
+.nav-links {
+  flex: 1 1 30rem;
+}
+
+//content styling
+
+.container {
+  height: 40vh;
+  font-size: 6rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color;
+  user-select: none;
+  animation: background-text 1s ease-in-out;
+}
+
+//individual styling
+.text-page {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-2 {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  width: 80%;
+  margin: auto;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 2.5rem;
+}
+
+//animations
+@keyframes background-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
